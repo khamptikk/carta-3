@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carta 3 - Bienvenido</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+        }
+        
+        header {
+            background: rgba(0, 0, 0, 0.8);
+            color: white;
+            padding: 2rem 0;
+            text-align: center;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+        }
+        
+        header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+        
+        header p {
+            font-size: 1.2rem;
+            opacity: 0.9;
+        }
+        
+        nav {
+            background: rgba(0, 0, 0, 0.9);
+            padding: 1rem 0;
+            text-align: center;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        }
+        
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 1.5rem;
+            font-weight: 500;
+            transition: color 0.3s ease;
+        }
+        
+        nav a:hover {
+            color: #667eea;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 2rem auto;
+            padding: 0 20px;
+        }
+        
+        .hero {
+            background: white;
+            border-radius: 10px;
+            padding: 3rem;
+            margin-bottom: 2rem;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        
+        .hero h2 {
+            color: #667eea;
+            margin-bottom: 1rem;
+            font-size: 2rem;
+        }
+        
+        .hero p {
+            font-size: 1.1rem;
+            color: #666;
+            margin-bottom: 2rem;
+        }
+        
+        .cta-button {
+            display: inline-block;
+            background: #667eea;
+            color: white;
+            padding: 12px 30px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: 600;
+            transition: background 0.3s ease;
+            border: none;
+            cursor: pointer;
+            font-size: 1rem;
+        }
+        
+        .cta-button:hover {
+            background: #764ba2;
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(102, 126, 234, 0.4);
+        }
+        
+        .features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin: 2rem 0;
+        }
+        
+        .feature-card {
+            background: white;
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 3px 15px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        
+        .feature-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 5px 25px rgba(0, 0, 0, 0.15);
+        }
+        
+        .feature-card h3 {
+            color: #667eea;
+            margin-bottom: 1rem;
+            font-size: 1.3rem;
+        }
+        
+        .feature-card p {
+            color: #666;
+            line-height: 1.8;
+        }
+        
+        footer {
+            background: rgba(0, 0, 0, 0.9);
+            color: white;
+            text-align: center;
+            padding: 2rem;
+            margin-top: 3rem;
+            font-size: 0.9rem;
+        }
+        
+        footer p {
+            margin: 0.5rem 0;
+        }
+        
+        .social-links {
+            margin-top: 1rem;
+        }
+        
+        .social-links a {
+            color: #667eea;
+            text-decoration: none;
+            margin: 0 0.5rem;
+            transition: color 0.3s ease;
+        }
+        
+        .social-links a:hover {
+            color: #764ba2;
+        }
+        
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 1.8rem;
+            }
+            
+            nav a {
+                display: block;
+                margin: 0.5rem 0;
+            }
+            
+            .hero {
+                padding: 1.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>🎯 Carta 3</h1>
+        <p>Tu plataforma moderna y profesional</p>
+    </header>
+    
+    <nav>
+        <a href="#inicio">Inicio</a>
+        <a href="#servicios">Servicios</a>
+        <a href="#contacto">Contacto</a>
+    </nav>
+    
+    <div class="container">
+        <section class="hero" id="inicio">
+            <h2>Bienvenido a Carta 3</h2>
+            <p>Una experiencia web moderna, rápida y profesional. Diseñada para cautivar a tus visitantes desde el primer momento.</p>
+            <button class="cta-button" onclick="alert('¡Hola! Gracias por tu interés.')">Comienza Ahora</button>
+        </section>
+        
+        <section class="features" id="servicios">
+            <div class="feature-card">
+                <h3>💡 Innovación</h3>
+                <p>Diseño moderno y responsive que se adapta a cualquier dispositivo. Una experiencia fluida y intuitiva para todos tus usuarios.</p>
+            </div>
+            
+            <div class="feature-card">
+                <h3>⚡ Velocidad</h3>
+                <p>Optimizado para carga rápida y rendimiento excepcional. Tu página web siempre disponible y lista para impresionar.</p>
+            </div>
+            
+            <div class="feature-card">
+                <h3>🔒 Seguridad</h3>
+                <p>Alojado en GitHub Pages con HTTPS. Protección y confiabilidad para ti y para tus visitantes.</p>
+            </div>
+            
+            <div class="feature-card">
+                <h3>📱 Responsive</h3>
+                <p>Se ve perfectamente en móviles, tablets y desktops. Una experiencia consistente en todas las plataformas.</p>
+            </div>
+            
+            <div class="feature-card">
+                <h3>🎨 Diseño</h3>
+                <p>Interfaz moderna con gradientes y animaciones. Atractivo visualmente sin sacrificar la funcionalidad.</p>
+            </div>
+            
+            <div class="feature-card">
+                <h3>🌐 Global</h3>
+                <p>Accesible desde cualquier parte del mundo. Distribuida en los servidores de GitHub para máxima disponibilidad.</p>
+            </div>
+        </section>
+    </div>
+    
+    <footer id="contacto">
+        <p><strong>Carta 3 © 2026</strong></p>
+        <p>Creado con ❤️ usando GitHub Pages</p>
+        <div class="social-links">
+            <a href="https://github.com/khamptikk/carta-3" target="_blank">GitHub</a>
+        </div>
+        <p style="margin-top: 1rem; opacity: 0.8; font-size: 0.85rem;">
+            Repositorio: <a href="https://github.com/khamptikk/carta-3" style="color: #667eea;" target="_blank">github.com/khamptikk/carta-3</a>
+        </p>
+    </footer>
+</body>
+</html>
