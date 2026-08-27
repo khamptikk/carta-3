@@ -2,10 +2,10 @@
 
 ## Enlace al Proyecto
 
-🔗 **Enlace Público Permanente:** https://github.com/khamptikk/carta-3
+🔗 **Accede a la Web:** https://khamptikk.github.io/carta-3/vecxus%20app
 
 ---
 
 Este es el repositorio oficial del proyecto Carta 3.
 
-Para más información, accede al enlace anterior.
+Para ver la aplicación web, accede al enlace anterior.
